@@ -1,0 +1,92 @@
+header {
+  height: 150px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 5;
+  -webkit-box-shadow: 0 4px 4px -4px #666;
+  -moz-box-shadow: 0 4px 4px -4px #666;
+  box-shadow: 0 4px 4px -4px #666; }
+  header a {
+    font-family: 'Bangers', cursive;
+    color: #000;
+    font-size: 2.5em;
+    font-weight: 100; }
+
+.nav {
+  text-align: center; }
+  .nav .nav div img {
+    margin-top: 2%;
+    height: 90%;
+    width: auto; }
+  .nav .nav-text {
+    margin-top: 40px; }
+    .nav .nav-text i {
+      margin-left: 2%;
+      margin-right: 2%; }
+  .nav .glyphicon {
+    color: #42D3E3; }
+
+#avatarImg {
+  margin-top: 3%;
+  height: 93%;
+  width: auto;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out; }
+
+#avatarImg:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg); }
+
+.container {
+  width: 100%;
+  margin-top: 3px;
+  background-color: #eee; }
+
+#intro {
+  text-align: center; }
+
+#intro h1 {
+  color: #E35242;
+  font-family: 'Bangers', cursive;
+  font-size: 5em; }
+
+#intro h2 {
+  font-size: 1.8em; }
+
+#intro h3 {
+  text-align: left;
+  font-size: 1.3em; }
+
+#intro h2, h3 {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 800; }
+
+.polaroid {
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -webkit-box-shadow: 3px 3px 5px 0px #9e9c9e;
+  -moz-box-shadow: 3px 3px 5px 0px #9e9c9e;
+  box-shadow: 3px 3px 5px 0px #9e9c9e;
+  background: #fff;
+  padding: 20px 20px 80px 20px; }
+
+.polaroid img {
+  width: 100%;
+  height: auto; }
+
+.my-tab {
+  display: none; }
+
+.active {
+  display: block; }
+
+.rotate-right {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg); }
+
+/*# sourceMappingURL=portfolio.css.map */
