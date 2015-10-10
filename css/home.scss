@@ -1,0 +1,36 @@
+@import "main";
+
+#intro {
+  text-align: center;
+  h1 {
+      color: $red;
+      font-family: 'Bangers', cursive;
+      font-size: 5em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  h3 {
+    text-align: left;
+    font-size: 1.3em;
+  }
+  h2, h3 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 800;
+  }
+}
+.polaroid {
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(158,156,158,1);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(158,156,158,1);
+  box-shadow: 3px 3px 5px 0px rgba(158,156,158,1);
+  background: #fff;
+  padding: 20px 20px 80px 20px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

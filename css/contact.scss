@@ -1,0 +1,26 @@
+@import "main";
+
+#contact {
+  margin-top: 20px;
+}
+
+.contact-box {
+  padding-top: 35px;
+  border: 1px solid $yellow;
+  border-right: 15px solid $yellow;
+  height: 100px;
+  background: #ffffff;
+  text-align: center;
+  span {
+    font-size: 1.2em;
+    color: #000000;
+  }
+  a {
+    vertical-align: middle;
+    font-size: 1.2em;
+    color: #000000;
+    i {
+    margin-right: 10px;
+    }
+  }
+}
