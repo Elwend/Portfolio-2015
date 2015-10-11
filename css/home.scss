@@ -11,6 +11,9 @@
     font-size: 1.8em;
   }
   h3 {
+    color: $red;
+    margin: 0;
+    padding: 15px;
     text-align: left;
     font-size: 1.3em;
   }
@@ -19,18 +22,49 @@
     font-weight: 800;
   }
 }
+.info {
+  margin-top: 20px;
+  font-size: 1.2em;
+  line-height: 1.5;
+  text-align: left;
+}
 .polaroid {
   -webkit-transform: rotate(-2deg);
   -moz-transform: rotate(-2deg);
   -ms-transform: rotate(-2deg);
   -o-transform: rotate(-2deg);
-  -webkit-box-shadow: 3px 3px 5px 0px rgba(158,156,158,1);
-  -moz-box-shadow: 3px 3px 5px 0px rgba(158,156,158,1);
-  box-shadow: 3px 3px 5px 0px rgba(158,156,158,1);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   background: #fff;
   padding: 20px 20px 80px 20px;
   img {
     width: 100%;
     height: auto;
+  }
+}
+
+@media (max-width: 768px){
+  .polaroid {
+    max-width: 400px;
+  }
+  #intro {
+    width: 90%;
+    margin: 10px auto;
+    h1, h2 {
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5em;
+    }
+    h2 {
+      font-size: 1.5em;
+    }
+    h3 {
+      font-size: 1em;
+    }
+    p {
+      font-size: 13px;
+    }
   }
 }

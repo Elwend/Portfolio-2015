@@ -1,16 +1,33 @@
 @import "main";
 
-#contact {
-  margin-top: 20px;
+.contact-container {
+  width: 100%;
+  height: auto;
 }
-
-.contact-box {
-  padding-top: 35px;
-  border: 1px solid $yellow;
-  border-right: 15px solid $yellow;
-  height: 100px;
-  background: #ffffff;
+.contacts {
+  margin: 0 auto;
   text-align: center;
+}
+.contact-note {
+  display: inline-block;
+  margin: 20px;
+  width: 250px;
+  height: 250px;
+  background-color: #FFFF70;
+  box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  border: 1px solid rgba(0,0,0,.25);
+  &:nth-child(1){
+    -ms-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+  }
+  &:nth-child(2n){
+    -ms-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
   span {
     font-size: 1.2em;
     color: #000000;

@@ -12,24 +12,26 @@
 
 <body ng-controller="mainController">
   <header>
-    <div class="row nav">
-      <div class="col-md-2 col-md-offset-1 nav-text">
-        <a href="#intro"><i class="fa fa-female fa-1x"></i>About</a>
-      </div>
-      <div class="col-md-2 nav-text">
-        <a href="#portfolio"><i class="fa fa-folder-open fa-1x"></i> Portfolio</a>
-      </div>
-      <div class="col-md-2">
-        <img src="images/avatar.png" class="img img-circle img-thumbnail" id="avatarImg">
-      </div>
-      <div class="col-md-2 nav-text">
-        <a href="#skills"><i class="fa fa-rocket fa-1x"></i> Skills</a>
-      </div>
-      <div class="col-md-2 nav-text">
-        <a href="#contact"><i class="fa fa-envelope-o fa-1x"></i> Contact</a>
-      </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="#intro"><i class="fa fa-female fa-1x"></i><span>About</span></a>
+        </li>
+        <li>
+          <a href="#portfolio"><i class="fa fa-folder-open fa-1x"></i><span>Portfolio</span></a>
+        </li>
+        <li id="avatarImg">
+          <img src="images/avatar.png" class="img img-circle">
+        </li>
+        <li>
+          <a href="#skills"><i class="fa fa-rocket fa-1x"></i><span>Skills</span></a>
+        </li>
+        <li>
+          <a href="#contact"><i class="fa fa-envelope-o fa-1x"></i><span>Contact</span></a>
+        </li>
+      </ul>
+    </nav>
   </header>
-
 
   <div class="container content">
 
