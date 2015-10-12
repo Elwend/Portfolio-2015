@@ -1,15 +1,21 @@
 @import "main";
 
 .skills-container {
-  width: 80%;
-  margin: 20px auto;
+  width: 100%;
+  margin-top: 10px;
   background-color: #ffffff;
   border: 1px solid #bdbdbd;
-  -webkit-box-shadow: 2px 2px 5px 0px rgba(189,189,189,1);
-  -moz-box-shadow: 2px 2px 5px 0px rgba(189,189,189,1);
-  box-shadow: 2px 2px 5px 0px rgba(189,189,189,1);
+  @include level1Shadow;
+  h3 {
+    margin: 10px;
+    color: $blue;
+  }
 }
 
 .skill-content {
   padding: 15px;
+}
+
+.skill-content:nth-child(2n){
+  background: #fafafa;
 }

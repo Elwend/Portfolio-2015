@@ -1,5 +1,5 @@
 var portfolioApp = angular.module('portfolioApp', [
-  'ngRoute'
+  'ngRoute', 'ngAnimate'
 ]);
 
 portfolioApp.config(['$routeProvider',
@@ -34,5 +34,6 @@ portfolioApp.config(['$routeProvider',
 ]);
 
 portfolioApp.controller('mainController', function($scope) {
-  $scope.message = 'Blah';
+  $scope.skills = ['Javascript', 'jQuery', 'JSON, AJAX', 'Angular', 'Backbone', 'Ruby', 'Ruby on Rails', 'HTML', 'CSS/SCSS/SASS', 'Bower', 'Grunt/Gulp', 'MySQL, PostgreSQL'];
+  $scope.tools = ['Git/Github', 'Asana', 'Jira', 'Confluence', 'Pivotal Tracker', 'Atom/Sublime Text', 'Visual Studio', 'Photoshop'];
 });
