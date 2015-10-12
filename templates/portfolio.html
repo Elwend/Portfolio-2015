@@ -1,7 +1,24 @@
-<link type="text/css" rel="stylesheet" href="../css/portfolio.css"/>
+<link type="text/css" rel="stylesheet" href="../css/portfolio.css" />
 
-<div class="row" id="portfolio">
-  <h1>Portfolio</h1>
-  Lorem ipsum blah blah Lorem ipsum blah blah Lorem ipsum blah blah Lorem ipsum blah blah Lorem ipsum blah blah Lorem ipsum blah blah Lorem ipsum blah blah Lorem ipsum blah blah Lorem ipsum blah blah Lorem ipsum blah blah Lorem ipsum blah blah Lorem ipsum
-  blah blah Lorem ipsum blah blah Lorem ipsum blah blah
+<div class="row" id="portfolio" ng-controller="slideController">
+  <div class="portfolio-section" data-ng-class="{'active-slides': isActive==true}">
+    <div class="row">
+      <div class="col-md-6 pull-left">
+        <h3><a href="app.lifespeed.io">App.Lifespeed.io</a></h3>
+      </div>
+      <div class="col-md-6 pull-right">
+        <button class="btn btn-primary pull-right" ng-click="activeSlides()">Expand</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <span>Jan 2015 - Present</span>
+      </div>
+    </div>
+    <flex-slider slide="slide in lifespeedSlides">
+      <li>
+        <img ng-src="{{slide}}">
+      </li>
+    </flex-slider>
+  </div>
 </div>

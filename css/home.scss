@@ -3,9 +3,9 @@
 #intro {
   text-align: center;
   h1 {
-      color: $red;
-      font-family: 'Bangers', cursive;
-      font-size: 5em;
+    color: $red;
+    font-family: 'Bangers', cursive;
+    font-size: 5em;
   }
   h2 {
     font-size: 1.8em;
@@ -17,10 +17,14 @@
     text-align: left;
     font-size: 1.3em;
   }
-  h2, h3 {
+  h2,
+  h3 {
     font-family: 'Fjalla One', sans-serif;
     font-weight: 800;
   }
+}
+.intro-info {
+  margin-top: 50px;
 }
 .info {
   margin-top: 20px;
@@ -37,21 +41,21 @@
   -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   background: #fff;
-  padding: 20px 20px 80px 20px;
+  padding: 20px 20px 80px;
   img {
     width: 100%;
     height: auto;
   }
 }
-
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .polaroid {
     max-width: 400px;
   }
   #intro {
     width: 90%;
     margin: 10px auto;
-    h1, h2 {
+    h1,
+    h2 {
       text-align: center;
     }
     h1 {

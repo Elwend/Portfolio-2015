@@ -1,0 +1,25 @@
+@import "main";
+
+.portfolio-section {
+  width: 40%;
+  margin: 2% 5%;
+  height: auto;
+  display: inline-block;
+  float: left;
+  a {
+    color: $red;
+  }
+  button {
+    background-color: $blue;
+  }
+}
+.flexslider-container {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  margin: 10px auto;
+}
+.active-slides {
+  width: 80% !important;
+  margin: 2% 10% !important;
+}

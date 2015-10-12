@@ -24,5 +24,8 @@
   "devDependencies": {
     "angular": "~1.4.7",
     "angular-route": "~1.4.7"
+  },
+  "resolutions": {
+    "angular": "1.4.7"
   }
 }
