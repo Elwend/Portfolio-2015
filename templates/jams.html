@@ -1,0 +1,14 @@
+<link type="text/css" rel="stylesheet" href="../css/jams.css" />
+
+<div ng-controller="jamsController" class="jams-container">
+  <div ng-repeat="track in tracks" class="row sc-track">
+    <div class="album-art" ng-style="{'background-image':'url({{track.artwork_url}})'}">
+    </div>
+    <div class="track-info">
+      <a ng-href="{{track.permalink_url}}">
+        <h3> {{ track.title }} </h3>
+      </a>
+    </div>
+    <a class="play" ng-click="play(track.stream_url)"></a>
+  </div>
+</div>
