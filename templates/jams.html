@@ -9,6 +9,6 @@
         <h3> {{ track.title }} </h3>
       </a>
     </div>
-    <a class="play" ng-click="play(track.stream_url)"></a>
+    <a ng-click="play(track)" ng-class="track.isPlaying ? 'play track-playing' : 'play track-paused'"><i ng-class="track.isPlaying ? 'fa fa-pause fa-1x' : 'fa fa-play-circle-o fa-2x'"></i></a>
   </div>
 </div>

@@ -61,9 +61,15 @@ portfolioApp.controller('jamsController', function($scope, scService) {
   var clientId = 'def295c86b5f5416609b3e8c5e985cb2';
   $scope.tracks = [];
   $scope.play = function(track){
-    var song = new Audio();
-    song.src = track + '?client_id=' + clientId;
-    song.play();
+    if (track.isPlaying){
+      track.isPlaying = false;
+      track.song.pause();
+    } else {
+      track.isPlaying = true;
+      track.song = new Audio();
+      track.song.src = track.stream_url + '?client_id=' + clientId;
+      track.song.play();
+    }
   };
   var getPlaylist = function(){
     scService.getPlaylist().then(function(tracks){
