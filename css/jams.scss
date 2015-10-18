@@ -15,10 +15,9 @@ $neon: #2CDE50;
     background-color: #ffffff;
   }
   h3 {
-    height: 50px;
+    font-size: 1.3em;
     margin-top: 25px;
-    text-overflow: hidden;
-    color: $blue;
+    color: #000;
     font-weight: 200;
   }
 }
@@ -30,8 +29,12 @@ $neon: #2CDE50;
   margin-right: 20px;
 }
 .track-info {
+  width: 50%;
+  height: 50px;
   display: inline-block;
   float: left;
+  height: 100px;
+  overflow: hidden;
 }
 .play {
   display: inline-block;
@@ -61,4 +64,10 @@ $neon: #2CDE50;
 }
 .track-paused {
   background: $neon;
+}
+
+@media (max-width: 480px){
+  .track-info {
+    display: none;
+  }
 }
