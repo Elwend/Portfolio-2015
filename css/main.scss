@@ -3,7 +3,7 @@ $darkRed: #b21b2b;
 $blue: #1f93cc;
 $darkBlue: #0078b2;
 $yellow: #fff727;
-$mediumFont: #444444;
+$mediumFont: #444;
 
 @mixin valign {
   position: relative;
@@ -22,7 +22,11 @@ body {
   height: 100%;
   background-color: #eee;
 }
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
   margin: 0;
 }
 header {
@@ -51,27 +55,38 @@ nav {
         width: auto;
       }
       a {
-        font-family: 'Bangers', cursive;
         color: #000;
+        font-family: 'Bangers', cursive;
         font-size: 2.5em;
         font-weight: 100;
+        text-decoration: none;
         i {
+          padding: 0 2%;
           color: $blue;
           margin-right: 10px;
+        }
+        &:hover,
+        &:visited,
+        &:hover,
+        &:focus,
+        &:active {
+          text-decoration: none;
         }
       }
     }
   }
-  i {
-    padding: 0 2%;
-  }
+}
+.icon-hidden {
+  display: none;
 }
 #avatarImg {
-  -webkit-transition: -webkit-transform 0.8s ease-in-out;
-  transition: transform 0.8s ease-in-out;
-  &:hover {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+  img {
+    -webkit-transition: -webkit-transform 0.8s ease-in-out;
+    transition: transform 0.8s ease-in-out;
+    &:hover {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
   }
 }
 .container {
@@ -115,10 +130,13 @@ nav {
   }
 }
 @media (max-width: 575px) {
-  #avatarImg {
-    display: none;
-  }
   ul li {
-    width: 24%;
+    width: 19% !important;
+    img {
+      display: none;
+    }
+    .icon-hidden {
+      display: block;
+    }
   }
 }
