@@ -1,0 +1,3 @@
+portfolioApp.controller('mainController', function(){
+
+});

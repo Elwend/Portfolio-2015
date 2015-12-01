@@ -73,6 +73,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
 
   grunt.registerTask('default', ['copy', 'sass', 'watch']);
-  grunt.registerTask('production', ['copy', 'sass', 'imagemin']);
+  grunt.registerTask('production', ['copy', 'sass', 'imagemin', 'concat']);
 
 };
