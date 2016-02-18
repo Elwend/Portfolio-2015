@@ -1,7 +1,16 @@
 portfolioApp.controller('jamsController', function($scope, scService, tracklist) {
 
   var clientId = 'def295c86b5f5416609b3e8c5e985cb2';
-  $scope.tracks = tracklist;
+  $scope.tracklist = tracklist;
+  $scope.tracks = [];
+
+  for (var i=0 in $scope.tracklist){
+    scService.getTrack($scope.tracklist[i].id, function(done, data){
+      if (done){
+        $scope.tracks.push(data);
+      }
+    });
+  }
 
   $scope.play = function(track){
     if (track.isPlaying){
